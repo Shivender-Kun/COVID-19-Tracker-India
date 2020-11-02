@@ -78,7 +78,7 @@ export default class CovidCities extends React.Component {
           data: result,
           stateName: Object.keys(result),
         });
-        console.log(this.state.stateName);
+        // console.log(this.state.stateName);
       });
     });
   }
@@ -198,7 +198,7 @@ export default class CovidCities extends React.Component {
           {this.state.show === 1 && this.state.value !== "" ? (
             <div>
               <form id="searchState" onSubmit={this.searchState}>
-                <label className="inputArea">Select State</label>
+                <label className="inputArea">Select Place</label>
                 <select value={this.state.value} onChange={this.handleChange}>
                   <option value="India">India</option>
                   {stateName}
@@ -294,7 +294,7 @@ export default class CovidCities extends React.Component {
             </div>
           ) : (
             <form id="searchState" onSubmit={this.searchState}>
-              <label className="inputArea">Select State</label>
+              <label className="inputArea">Select Place</label>
               <select value={this.state.value} onChange={this.handleChange}>
                 <option value="India">India</option>
                 {stateName}
