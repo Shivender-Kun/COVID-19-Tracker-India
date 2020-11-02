@@ -67,19 +67,27 @@
     background: rgba(128, 128, 128, 0.178);
 }
 
-.data_cards .confirmed_card {
-    color: orangered;
+.data_cards .confirmed_card,
+.dataset #_conf {
+    font-size: 25px;
+    color: orangered ;
 }
 
-.data_cards .active_card {
+.data_cards .active_card,
+.dataset #_active {
+    font-size: 25px;
     color: rgb(80, 139, 248);
 }
 
-.data_cards .recovered_card {
+.data_cards .recovered_card,
+.dataset #_recovered {
+    font-size: 25px;
     color: green;
 }
 
-.data_cards .deaths_card {
+.data_cards .deaths_card,
+.dataset #_deaths {
+    font-size: 25px;
     color: grey;
 }
 

@@ -94,7 +94,7 @@ export default class CovidData extends React.Component {
                             <h4>Confirmed</h4>
                             <div className="dataset">
                                 <h6>+{this.state.cChanges}</h6>
-                                <h2>
+                                <h2 id='_conf'>
                                     {nfObject.format(
                                         this.state.confirmed.reduce((a, b) => a + b, 0)
                                     )}
@@ -105,7 +105,7 @@ export default class CovidData extends React.Component {
                             <h4>Active</h4>
                             <div className="dataset">
                                 <h6> </h6>
-                                <h2>
+                                <h2 id='_active'>
                                     {nfObject.format(
                                         this.state.active.reduce((a, b) => a + b, 0)
                                     )}
@@ -117,7 +117,7 @@ export default class CovidData extends React.Component {
                             <h4>Recovered</h4>
                             <div className="dataset">
                                 <h6>+{this.state.rChanges}</h6>
-                                <h2>
+                                <h2 id='_recovered'>
                                     {nfObject.format(
                                         this.state.recovered.reduce((a, b) => a + b, 0)
                                     )}
@@ -128,7 +128,7 @@ export default class CovidData extends React.Component {
                             <h4>Deaths</h4>
                             <div className="dataset">
                                 <h6>+{this.state.dChanges}</h6>
-                                <h2>
+                                <h2 id='_deaths'>
                                     {nfObject.format(
                                         this.state.deaths.reduce((a, b) => a + b, 0)
                                     )}
