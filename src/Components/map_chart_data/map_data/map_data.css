@@ -1,0 +1,39 @@
+.map {
+  height: 90vh;
+  max-height: 100vh;
+  margin-top: 120px;
+  /* border: 2px solid cyan; */
+}
+
+.mapContainer,
+.mapBox {
+  margin: 50px auto;
+  width: 680px;
+  height: 700px;
+  border-radius: 25px;
+}
+
+.mapboxgl-popup {
+  color: #000000;
+}
+
+.popup p{
+  font-size: 15px;
+  padding: 5px;
+  margin: 0px;
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+}
+
+.mapboxgl-popup-content {
+  border-radius: 20px;
+  color: black;
+  border: 2px solid yellowgreen;
+}
+
+h2 {
+  font-size: 25px;
+  margin-bottom: 120px;
+  color: aliceblue;
+  /* border: 2px solid yellowgreen; */
+}

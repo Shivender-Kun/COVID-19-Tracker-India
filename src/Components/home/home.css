@@ -1,0 +1,23 @@
+.home {
+  margin-right: -1px;
+  padding: 30px;
+  cursor: default;
+  margin-top: 40px;
+  /* border: 3px solid yellow; */
+}
+
+@media (max-width: 1500px) {
+  .home {
+    width: 100%;
+    min-width: min-content;
+    margin: 10px auto;
+    border-bottom: 1px solid yellow;
+  }
+}
+
+@media (min-width: 1500px) {
+  .home {
+    min-width: min-content;
+    /* border-right: 1px solid rgba(245, 245, 245, 0.253); */
+  }
+}

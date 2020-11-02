@@ -1,0 +1,137 @@
+.data {
+    display: flex;
+    max-width: max-content;
+    margin: 50px auto;
+}
+
+.title {
+    margin: 50px auto -20px;
+    padding-top: 20px;
+}
+
+.title-main {
+    color: rgb(255, 255, 255);
+}
+
+.data_cards {
+    display: flex;
+    width: fit-content;
+    padding: 20px;
+    margin:10px auto;
+}
+
+.dataset {
+    height: 60px;
+    margin-top: 20px;
+}
+
+.dataset h6 {
+    min-height: 15px;
+    font-size: 14px;
+}
+
+.active_card,
+.recovered_card,
+.deaths_card,
+.confirmed_card {
+    padding: 60px 0px;
+    border-radius: 20px;
+    width: 185px;
+    margin: -17px auto;
+
+    font-size: 20px;
+
+    transition: 0.5s ease-out;
+}
+
+.active_card:hover,
+.recovered_card:hover,
+.deaths_card:hover,
+.confirmed_card:hover {
+    padding: 90px 1px;
+}
+
+.data_cards .confirmed_card:hover {
+    background: rgba(255, 0, 0, 0.178);
+}
+
+.data_cards .active_card:hover {
+    background: rgba(0, 0, 255, 0.178);
+}
+
+.data_cards .recovered_card:hover {
+    background: rgba(0, 255, 0, 0.178);
+}
+
+.data_cards .deaths_card:hover{
+    background: rgba(128, 128, 128, 0.178);
+}
+
+.data_cards .confirmed_card {
+    color: orangered;
+}
+
+.data_cards .active_card {
+    color: rgb(80, 139, 248);
+}
+
+.data_cards .recovered_card {
+    color: green;
+}
+
+.data_cards .deaths_card {
+    color: grey;
+}
+
+li {
+    list-style: none;
+    font-size: 15px;
+
+    padding: 18px 10px;
+    width: 150px;
+    max-width: 200px;
+    
+
+    border: 2px solid #161246;
+    background: #222757;
+    color: rgba(0, 255, 157, 0.623);
+
+    height: 70px;
+    text-align: center;
+
+    transition: 0.5s ease-out;
+}
+
+
+
+li:hover {
+    background: rgba(38, 9, 168, 0.233);
+    color: orangered;
+    width: 170px;
+    font-size: 17px;
+    min-width: fit-content;
+}
+
+.states li:nth-child(33) {
+    padding-top: 10px;
+}
+
+li:nth-child(1) {
+    color: goldenrod;
+
+    padding-bottom: 5px;
+    font-size: 19px;
+    font-weight: bold;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+li:last-child,
+.data_container .data li:nth-child(37) {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.data_container .data li:nth-child(38) {
+    display: none;
+}

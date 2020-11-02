@@ -1,0 +1,44 @@
+.navBar {
+  display: flex;
+  flex-direction: column;
+  float: left;
+
+  width: 92px;
+  height: 100vh;
+  padding: 10px;
+
+  position: fixed;
+  background: #222757;
+}
+
+.navBar .covid-india {
+  margin: 20px auto;
+  pointer-events: none;
+  text-align: center;
+}
+
+
+.nav-icons {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.about-icon {
+  margin-top: 50px;
+}
+
+svg {
+  stroke: #64FFDA;
+  stroke-width: 2px;
+  width: 24px;
+  height: 24px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+a {
+  text-decoration: none;
+  color: cornflowerblue;
+}
+
