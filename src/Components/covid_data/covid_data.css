@@ -7,6 +7,7 @@
 .title {
     margin: 50px auto -20px;
     padding-top: 20px;
+    /* border: 2px solid yellow; */
 }
 
 .title-main {
@@ -142,11 +143,11 @@ li:last-child,
     display: none;
 }
 
-@media (max-width: 920px) {
+@media (max-width: 600px) {
         .data_cards {
-        padding: 10px 0px;
-        margin: 0px;
-        border: 2px solid blue;
+        padding: 0px;
+        margin: 0px auto;
+        /* border: 2px solid blue; */
     }
 
     .dataset {
@@ -166,28 +167,50 @@ li:last-child,
     .recovered_card,
     .deaths_card,
     .confirmed_card {
-        padding: 40px 0px;
+        padding: 10px 5px 30px;
         border-radius: 20px;
-        width: 145px;
-        margin: -20px auto;
+        width: 105px;
+        margin: 0px auto;
 
         font-size: 18px !important;
-
-        transition: 0.5s ease-out;
     }
 
     .active_card:hover,
     .recovered_card:hover,
     .deaths_card:hover,
     .confirmed_card:hover {
-        padding: 50px 0px;
+        padding: 20px 0px 40px;
     }
     .data {
-        margin: 60px auto;
+        margin: 40px auto;
     }
 
     .title {
         margin: 0px auto 20px;
         padding-top: 0px;
+        
+    }
+    li {
+        font-size: 12px;
+
+        padding: 10px 5px;
+        width: 100px;        
+
+        border: 1px solid #161246;
+
+        height: 60px;
+    }
+
+    li:hover {
+        width: 110px;
+        font-size: 14px;
+    }
+    .states li:nth-child(33) {
+        padding-top: 5px;
+    }
+
+    li:nth-child(1) {
+        padding-top: 20px;
+        font-size: 13px;
     }
 }
