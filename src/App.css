@@ -20,7 +20,7 @@ h1 {
   display: flex;
   width: calc(99vw - 92px);
   margin-left: 92px;
-  /* border: 4px solid blueviolet; */
+  border: 4px solid blueviolet;
 }
 
 @media (max-width: 1500px) {
@@ -33,8 +33,7 @@ h1 {
 
 @media (max-width: 920px) {
   .home-map {
-    /* margin-right: 40px auto; */
-    width: 100% !important;
+    width: 100%;
     margin-left: 0px;
   }
 }

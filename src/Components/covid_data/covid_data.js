@@ -87,14 +87,14 @@ export default class CovidData extends React.Component {
 
         return (
             <div className="data_container">
-                <div className="title">
+                <div className="titles">
                     <h2 className="title-main">Total Cases In India</h2>
                     <div className="data_cards">
                         <div className="confirmed_card">
                             <h4>Confirmed</h4>
                             <div className="dataset">
                                 <h6>+{this.state.cChanges}</h6>
-                                <h2 id='_conf'>
+                                <h2 id="_conf">
                                     {nfObject.format(
                                         this.state.confirmed.reduce((a, b) => a + b, 0)
                                     )}
@@ -105,7 +105,7 @@ export default class CovidData extends React.Component {
                             <h4>Active</h4>
                             <div className="dataset">
                                 <h6> </h6>
-                                <h2 id='_active'>
+                                <h2 id="_active">
                                     {nfObject.format(
                                         this.state.active.reduce((a, b) => a + b, 0)
                                     )}
@@ -117,7 +117,7 @@ export default class CovidData extends React.Component {
                             <h4>Recovered</h4>
                             <div className="dataset">
                                 <h6>+{this.state.rChanges}</h6>
-                                <h2 id='_recovered'>
+                                <h2 id="_recovered">
                                     {nfObject.format(
                                         this.state.recovered.reduce((a, b) => a + b, 0)
                                     )}
@@ -128,7 +128,7 @@ export default class CovidData extends React.Component {
                             <h4>Deaths</h4>
                             <div className="dataset">
                                 <h6>+{this.state.dChanges}</h6>
-                                <h2 id='_deaths'>
+                                <h2 id="_deaths">
                                     {nfObject.format(
                                         this.state.deaths.reduce((a, b) => a + b, 0)
                                     )}
@@ -138,26 +138,28 @@ export default class CovidData extends React.Component {
                     </div>
                 </div>
                 <div className="data">
-                    <ul className="states">
-                        <li>States/UT</li>
-                        {states}
-                    </ul>
-                    <ul className="confirmed">
-                        <li>Confirmed</li>
-                        {confirmed}
-                    </ul>
-                    <ul className="active">
-                        <li>Active</li>
-                        {active}
-                    </ul>
-                    <ul className="deaths">
-                        <li>Deaths</li>
-                        {deaths}
-                    </ul>
-                    <ul className="recovered">
-                        <li>Recovered</li>
-                        {recovered}
-                    </ul>
+                    <div className='list'>
+                        <ul className="states">
+                            <li>States/UT</li>
+                            {states}
+                        </ul>
+                        <ul className="confirmed">
+                            <li>Confirmed</li>
+                            {confirmed}
+                        </ul>
+                        <ul className="active">
+                            <li>Active</li>
+                            {active}
+                        </ul>
+                        <ul className="deaths">
+                            <li>Deaths</li>
+                            {deaths}
+                        </ul>
+                        <ul className="recovered">
+                            <li>Recovered</li>
+                            {recovered}
+                        </ul>
+                    </div>
                 </div>
             </div>
         );

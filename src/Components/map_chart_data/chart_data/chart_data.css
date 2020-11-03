@@ -107,25 +107,22 @@ button:focus {
 @media (max-width: 400px) {
   .charts {
     margin: 0px;
-    /* margin-left: -90px; */
   }
 
   .all_charts div {
-    width: fit-content;
+    max-width: fit-content;
     margin: 10px auto;
     height: max-content;
     padding: 10px 5px;
     border-radius: 20px;
+    /* border: 2px solid green; */
+
   }
 
   .all_charts div div {
     margin: 20px auto;
-    width: 360px;
+    width: 350px;
     height: 280px;
-  }
-
-  h2 {
-    max-width: 360px;
   }
 
   .change_btn {

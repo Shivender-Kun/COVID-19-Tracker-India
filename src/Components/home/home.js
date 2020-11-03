@@ -5,9 +5,7 @@ import CovidCities from "../covid_data/covid_cities/covid_cities";
 function Home() {
     return (
         <div className="home">
-            <div>
-                <CovidCities />
-            </div>
+            <CovidCities />
             <CovidData />
         </div>
     );

@@ -1,19 +1,20 @@
 .data {
-    display: flex;
     margin: 50px auto;
+}
+
+.data .list {
+    display: flex;
+    max-width: fit-content;
+    margin: auto;
 }
 
 .title {
     margin: 50px auto -20px;
     padding-top: 20px;
 }
-.data_container {
-    width: fit-content;
-}
 
 .data {
     margin: 10px auto;
-    width: fit-content;
 }
 
 .title-main {
@@ -22,7 +23,6 @@
 
 .data_cards {
     display: flex;
-    width: fit-content;
     padding: 20px;
     margin: 10px auto;
 }
@@ -187,10 +187,9 @@ li:last-child,
         padding: 20px 0px 40px;
     }
 
-    .title {
+    .titles {
         margin: 0px auto 20px;
-        padding-top: 0px;
-        
+        padding-top: 0px;  
     }
 
 
@@ -209,6 +208,7 @@ li:last-child,
         width: 110px;
         font-size: 14px;
     }
+
     .states li:nth-child(33) {
         padding-top: 5px;
     }
@@ -245,9 +245,8 @@ li:last-child,
     .confirmed_card {
         padding: 10px 5px 30px;
         border-radius: 20px;
-        width: 85px;
+        width: 90px;
         margin: 0px auto;
-
         font-size: 15px !important;
     }
 
@@ -258,7 +257,7 @@ li:last-child,
         padding: 20px 0px 40px;
     }
 
-    .title {
+    .titles {
         margin: 0px auto 20px;
         padding-top: 0px;
     }

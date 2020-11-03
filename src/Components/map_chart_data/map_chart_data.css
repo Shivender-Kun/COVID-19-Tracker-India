@@ -1,6 +1,7 @@
 .maps_charts {
   margin-left: -1px;
   margin-top: 40px;
+  border: 2px solid yellow;
 }
 
 @media (min-width: 1500px) {
@@ -10,5 +11,11 @@
 }
 
 @media (max-width: 400px) {
-  
+  .maps_charts {
+    max-width: fit-content;
+  }
+
+  .mapping_chart {
+    max-width: fit-content;
+  }
 }
