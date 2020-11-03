@@ -14,6 +14,7 @@ hr {
 @media (max-width: 600px) {
   footer {
     margin: 20px auto;
-    width: 100%;
+    width: 100%; 
   }
+
 }

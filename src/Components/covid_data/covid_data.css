@@ -196,7 +196,7 @@ li:last-child,
         font-size: 10px;
 
         padding: 10px 3px;
-        width: 67px;        
+        width: 100px;        
 
         border: 1px solid #161246;
 
@@ -204,7 +204,7 @@ li:last-child,
     }
 
     li:hover {
-        width: 70px;
+        width: 73px;
         font-size: 11px;
     }
     
@@ -215,5 +215,11 @@ li:last-child,
     li:nth-child(1) {
         padding-top: 20px;
         font-size: 11px;
+    }
+}
+
+@media (max-width: 500px) {
+    li {
+        width: 70px;
     }
 }
