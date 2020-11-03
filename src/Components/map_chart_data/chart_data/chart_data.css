@@ -105,3 +105,7 @@ button:focus {
     font-size: 15px !important;
   }
 }
+
+@media (max-width: 400px) {
+  
+}
