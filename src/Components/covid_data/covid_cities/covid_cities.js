@@ -212,6 +212,7 @@ export default class CovidCities extends React.Component {
               </div>
               <div className='stats_chart'>
                 <div className="data">
+                  <div className='list'>
                   <ul className="cities">
                     <li>Cities</li>
                     {cities}
@@ -232,7 +233,7 @@ export default class CovidCities extends React.Component {
                     <li>Recovered</li>
                     {recovered}
                   </ul>
-                </div>
+                </div></div>
                 <div className="cityCharts">
                   <Line
                     data={totalCases}
