@@ -1,6 +1,5 @@
 .data {
     display: flex;
-    max-width: max-content;
     margin: 50px auto;
 }
 
@@ -8,6 +7,15 @@
     margin: 50px auto -20px;
     padding-top: 20px;
     /* border: 2px solid yellow; */
+}
+.data_container {
+    width: 100%;
+    /* border: 2px solid blue; */
+}
+
+.data {
+    margin: 10px auto;
+    width: fit-content;
 }
 
 .title-main {
@@ -144,10 +152,9 @@ li:last-child,
 }
 
 @media (max-width: 600px) {
-        .data_cards {
+    .data_cards {
         padding: 0px;
         margin: 0px auto;
-        /* border: 2px solid blue; */
     }
 
     .dataset {
@@ -181,15 +188,14 @@ li:last-child,
     .confirmed_card:hover {
         padding: 20px 0px 40px;
     }
-    .data {
-        margin: 40px auto;
-    }
 
     .title {
         margin: 0px auto 20px;
         padding-top: 0px;
         
     }
+
+
     li {
         font-size: 12px;
 
