@@ -20,6 +20,6 @@ hr {
 @media (max-width: 400px) {
   footer {
     width: 100%;
-    margin-left: 10px;
+    /* margin-left: 10px; */
   }
 }

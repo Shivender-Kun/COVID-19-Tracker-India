@@ -1,14 +1,9 @@
 h1 {
   margin: 20px auto;
-  width: fit-content;
-  /* border: 2px solid cyan; */
 }
 
 .header-main {
-  width: calc(100vw - 135px);
-  margin-left: 95px;
-
-  /* border: 2px solid yellow; */
+  width: 100%;
   background: #161246d5;
 
   z-index: 3;
@@ -18,7 +13,6 @@ h1 {
 @media (max-width: 920px) {
   .header-main {
     width: 100%;
-    margin-left: 0px;
     font-size: 10px;
   }
 }
