@@ -11,3 +11,9 @@ hr {
   border-width: 0;
   height: 2px;
 }
+
+@media (max-width: 600px) {
+  footer {
+    margin: 20px auto;
+  }
+}

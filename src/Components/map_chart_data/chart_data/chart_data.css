@@ -99,3 +99,9 @@ button:focus {
   background: rgb(121, 54, 54);
   color: rgb(252, 255, 255);  
 }
+
+@media (max-width: 600px) {
+  p {
+    font-size: 15px !important;
+  }
+}

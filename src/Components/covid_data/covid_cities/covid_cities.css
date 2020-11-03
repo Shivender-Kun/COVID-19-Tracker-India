@@ -68,8 +68,8 @@ option:nth-child(2) {
 
 .cityCharts {
   width: 85%;
-  height: fit-content;
-  border: 2px solid blueviolet;
+  height: 250px;
+  /* border: 2px solid blueviolet; */
   margin: 0px auto 20px;
   background: rgba(39, 22, 114, 0.356);
   border-radius: 20px;
@@ -103,6 +103,36 @@ option:nth-child(2) {
 
   #searchBtn:hover {
     font-size: 16px;
+  }
+
+  .cityCharts {
+    margin: 20px auto;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  select {
+    width: 35%;
+    padding: 5px 10px;
+
+    margin: 50px auto 0px;
+
+    font-size: 11px;
+  }
+
+  label {
+    font-size: 11px;
+    margin-right: 10px;
+  }
+
+  #searchBtn {
+    font-size: 11px;
+    padding: 5px 10px;
+  }
+
+  #searchBtn:hover {
+    font-size: 13px;
   }
 
   .cityCharts {

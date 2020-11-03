@@ -220,3 +220,76 @@ li:last-child,
         font-size: 13px;
     }
 }
+
+@media (max-width: 400px) {
+    .data_cards {
+        padding: 0px;
+        margin: 0px auto;
+        /* border: 2px solid yellow; */
+    }
+
+    .dataset {
+        height: 20px;
+        margin-top: 10px;
+    }
+
+    .dataset h6 {
+        font-size: 10px;
+    }
+
+    .dataset h2 {
+        font-size: 15px !important;
+        margin-top: 0px;
+    }
+
+    .active_card,
+    .recovered_card,
+    .deaths_card,
+    .confirmed_card {
+        padding: 10px 5px 30px;
+        border-radius: 20px;
+        width: 85px;
+        margin: 0px auto;
+
+        font-size: 15px !important;
+    }
+
+    .active_card:hover,
+    .recovered_card:hover,
+    .deaths_card:hover,
+    .confirmed_card:hover {
+        padding: 20px 0px 40px;
+    }
+
+    .title {
+        margin: 0px auto 20px;
+        padding-top: 0px;
+        
+    }
+
+
+    li {
+        font-size: 10px;
+
+        padding: 10px 3px;
+        width: 67px;        
+
+        border: 1px solid #161246;
+
+        height: 60px;
+    }
+
+    li:hover {
+        width: 70px;
+        font-size: 11px;
+    }
+    
+    .states li:nth-child(33) {
+        padding-top: 3px;
+    }
+
+    li:nth-child(1) {
+        padding-top: 20px;
+        font-size: 11px;
+    }
+}

@@ -84,7 +84,6 @@ export default class CovidCities extends React.Component {
   }
 
   render() {
-    // console.log(this.state.deceased.reduce((a, b) => a + b, 0))
     const totalCases = {
       labels: [0, "Total", 0],
       datasets: [
@@ -211,86 +210,90 @@ export default class CovidCities extends React.Component {
               <div className="title">
                 <h2 id="title-main">Total Cases In {currentStateName}</h2>
               </div>
-              <div className="data">
-                <ul className="cities">
-                  <li>Cities</li>
-                  {cities}
-                </ul>
-                <ul className="confirmed">
-                  <li>Confirmed</li>
-                  {confirmed}
-                </ul>
-                <ul className="active">
-                  <li>Active</li>
-                  {active}
-                </ul>
-                <ul className="deaths">
-                  <li>Deaths</li>
-                  {deaths}
-                </ul>
-                <ul className="recovered">
-                  <li>Recovered</li>
-                  {recovered}
-                </ul>
-              </div>
-              <div className="cityCharts">
-                <Line
-                  data={totalCases}
-                  options={{
-                    title: {
-                      display: true,
-                      text: "Total Cases In " + currentStateName,
-                      fontSize: 18,
-                      fontColor: "white",
-                    },
-                    legend: {
-                      labels: {
-                        fontColor: "lightgreen",
+              <div className='stats_chart'>
+                <div className="data">
+                  <ul className="cities">
+                    <li>Cities</li>
+                    {cities}
+                  </ul>
+                  <ul className="confirmed">
+                    <li>Confirmed</li>
+                    {confirmed}
+                  </ul>
+                  <ul className="active">
+                    <li>Active</li>
+                    {active}
+                  </ul>
+                  <ul className="deaths">
+                    <li>Deaths</li>
+                    {deaths}
+                  </ul>
+                  <ul className="recovered">
+                    <li>Recovered</li>
+                    {recovered}
+                  </ul>
+                </div>
+                <div className="cityCharts">
+                  <Line
+                    data={totalCases}
+                    options={{
+                      title: {
+                        display: true,
+                        text: "Total Cases In " + currentStateName,
+                        fontSize: 11,
+                        fontColor: "white",
                       },
-                    },
-                    tooltips: {
-                      mode: "nearest",
-                      intersect: false,
-                    },
-                    hover: {
-                      mode: "nearest",
-                      intersect: true,
-                    },
-                    scales: {
-                      yAxes: [
-                        {
-                          gridLines: {
-                            display: false,
-                          },
-                          ticks: {
-                            fontColor: "lightblue",
-                            fontSize: 12,
-                            callback: function (value) {
-                              return value > 9999
-                                ? value > 99999
-                                  ? value / 100000 + " L"
-                                  : value / 1000 + " K"
-                                : value;
+                      legend: {
+                        labels: {
+                          fontColor: "lightgreen",
+                          fontSize:  10,
+                        },
+                      },
+                      tooltips: {
+                        mode: "nearest",
+                        intersect: false,
+                      },
+                      hover: {
+                        mode: "nearest",
+                        intersect: true,
+                      },
+                      scales: {
+                        yAxes: [
+                          {
+                            gridLines: {
+                              display: false,
                             },
-                            padding: 20,
+                            ticks: {
+                              fontColor: "lightblue",
+                              fontSize: 12,
+                              callback: function (value) {
+                                return value > 9999
+                                  ? value > 99999
+                                    ? value / 100000 + " L"
+                                    : value / 1000 + " K"
+                                  : value;
+                              },
+                              padding: 20,
+                            },
                           },
-                        },
-                      ],
-                      xAxes: [
-                        {
-                          gridLines: {
-                            display: false,
+                        ],
+                        xAxes: [
+                          {
+                            gridLines: {
+                              display: false,
+                            },
+                            ticks: {
+                              fontColor: "red",
+                              fontSize: 13,
+                              padding: 20,
+                            },
                           },
-                          ticks: {
-                            fontColor: "red",
-                            fontSize: 13,
-                            padding: 20,
-                          },
-                        },
-                      ],
-                    },
-                  }}
-                />
+                        ],
+                      },
+                      maintainAspectRatio: false,
+                    }}
+                  />
+                </div>
               </div>
             </div>
           ) : (
