@@ -30,3 +30,10 @@ h1 {
     width: calc(98vw - 92px);
   }
 }
+
+@media (max-width: 920px) {
+  .home-map {
+    /* margin-right: 40px auto; */
+    width: 100%;
+  }
+}

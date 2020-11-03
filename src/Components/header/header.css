@@ -8,9 +8,16 @@ h1 {
   width: calc(100vw - 135px);
   margin-left: 95px;
 
-  /* border: 2px solid yellow; */
+  border: 2px solid yellow;
   background: #161246d5;
 
   z-index: 3;
   position: fixed;
+}
+
+@media (max-width: 920px) {
+  .header-main {
+    width: 100%;
+    margin-left: 0px;
+  }
 }

@@ -42,3 +42,8 @@ a {
   color: cornflowerblue;
 }
 
+@media (max-width: 920px) {
+  .navBar {
+    display: none;
+  }
+}

@@ -17,7 +17,7 @@
     display: flex;
     width: fit-content;
     padding: 20px;
-    margin:10px auto;
+    margin: 10px auto;
 }
 
 .dataset {
@@ -110,8 +110,6 @@ li {
     transition: 0.5s ease-out;
 }
 
-
-
 li:hover {
     background: rgba(38, 9, 168, 0.233);
     color: orangered;
@@ -142,4 +140,54 @@ li:last-child,
 
 .data_container .data li:nth-child(38) {
     display: none;
+}
+
+@media (max-width: 920px) {
+        .data_cards {
+        padding: 10px 0px;
+        margin: 0px;
+        border: 2px solid blue;
+    }
+
+    .dataset {
+        height: 20px;
+        margin-top: 10px;
+    }
+
+    .dataset h6 {
+        font-size: 12px;
+    }
+
+    .dataset h2 {
+        font-size: 19px !important;
+    }
+
+    .active_card,
+    .recovered_card,
+    .deaths_card,
+    .confirmed_card {
+        padding: 40px 0px;
+        border-radius: 20px;
+        width: 145px;
+        margin: -20px auto;
+
+        font-size: 18px !important;
+
+        transition: 0.5s ease-out;
+    }
+
+    .active_card:hover,
+    .recovered_card:hover,
+    .deaths_card:hover,
+    .confirmed_card:hover {
+        padding: 50px 0px;
+    }
+    .data {
+        margin: 60px auto;
+    }
+
+    .title {
+        margin: 0px auto 20px;
+        padding-top: 0px;
+    }
 }
