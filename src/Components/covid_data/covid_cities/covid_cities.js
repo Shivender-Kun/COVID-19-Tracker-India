@@ -264,7 +264,7 @@ export default class CovidCities extends React.Component {
                           },
                           ticks: {
                             fontColor: "lightblue",
-                            fontSize: 13,
+                            fontSize: 12,
                             callback: function (value) {
                               return value > 9999
                                 ? value > 99999
@@ -272,6 +272,7 @@ export default class CovidCities extends React.Component {
                                   : value / 1000 + " K"
                                 : value;
                             },
+                            padding: 20,
                           },
                         },
                       ],
