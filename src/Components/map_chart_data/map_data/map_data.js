@@ -43,7 +43,7 @@ export default function MapData() {
     );
   }
 
-  console.log(indiaData);
+  // console.log(indiaData);
 
   useEffect(() => {
     if (indiaData) {
@@ -51,7 +51,7 @@ export default function MapData() {
         container: mapboxElRef.current,
         style: "mapbox://styles/notalemesa/ck8dqwdum09ju1ioj65e3ql3k",
         center: [83, 22.5],
-        zoom: 4,
+        zoom: 3.2,
       });
 
       // Add navigation controls to the top right of the canvas

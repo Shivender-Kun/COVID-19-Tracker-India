@@ -10,7 +10,7 @@ class MapChartData extends React.Component {
   }
   render() {
     return (
-      <div>
+      <div className='mapping_chart'>
         <MapData />
         <div className="maps_charts">
           <ChartData />
