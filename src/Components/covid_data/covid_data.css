@@ -55,7 +55,7 @@
 .recovered_card:hover,
 .deaths_card:hover,
 .confirmed_card:hover {
-    padding: 90px 1px;
+    padding: 80px 1px 70px;
 }
 
 .data_cards .confirmed_card:hover {
