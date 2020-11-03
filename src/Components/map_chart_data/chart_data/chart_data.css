@@ -13,7 +13,6 @@ p {
   font-size: 20px ;
   color: aliceblue;
   margin-bottom: 30px;
-  /* border: 2px solid yellow; */
   padding: 10px ;
 }
 
@@ -22,13 +21,12 @@ p {
   height: max-content;
   padding: 10px 15px;
   border-radius: 20px;
-  /* border: 2px solid yellowgreen; */
 }
 
 .all_charts div div {
   margin: 60px auto;
-  /* border: 1px solid blueviolet; */
   width: 550px;
+  height: 300px;
 }
 
 #confirmed {
@@ -64,7 +62,6 @@ p {
 }
 
 .change_btn {
-  /* border: 2px solid yellow; */
   margin: 70px auto 50px;
   text-align: left;
   height: 40px;
@@ -102,10 +99,44 @@ button:focus {
 
 @media (max-width: 600px) {
   p {
-    font-size: 15px !important;
+    font-size: 13px !important;
+    max-width: fit-content;
   }
 }
 
 @media (max-width: 400px) {
-  
+  .charts {
+    margin: 0px;
+    /* margin-left: -90px; */
+  }
+
+  .all_charts div {
+    width: fit-content;
+    margin: 10px auto;
+    height: max-content;
+    padding: 10px 5px;
+    border-radius: 20px;
+  }
+
+  .all_charts div div {
+    margin: 20px auto;
+    width: 360px;
+    height: 280px;
+  }
+
+  h2 {
+    max-width: 360px;
+  }
+
+  .change_btn {
+    margin: 20px auto 10px;
+    text-align: left;
+    height: 30px;
+  }
+
+  button {
+    padding: 5px 10px;
+    font-size: 13px;
+    margin-left: 35px;
+  }
 }

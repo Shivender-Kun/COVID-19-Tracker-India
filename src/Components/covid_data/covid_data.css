@@ -6,11 +6,9 @@
 .title {
     margin: 50px auto -20px;
     padding-top: 20px;
-    /* border: 2px solid yellow; */
 }
 .data_container {
-    width: 100%;
-    /* border: 2px solid blue; */
+    width: fit-content;
 }
 
 .data {
@@ -225,7 +223,6 @@ li:last-child,
     .data_cards {
         padding: 0px;
         margin: 0px auto;
-        /* border: 2px solid yellow; */
     }
 
     .dataset {
@@ -264,9 +261,7 @@ li:last-child,
     .title {
         margin: 0px auto 20px;
         padding-top: 0px;
-        
     }
-
 
     li {
         font-size: 10px;

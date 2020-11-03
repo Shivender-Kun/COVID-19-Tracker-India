@@ -154,8 +154,6 @@ export default class ChartData extends React.Component {
             <div id="confirmed">
               <Line
                 data={confirmedCases}
-                width={550}
-                height={270}
                 options={{
                   maintainAspectRatio: false,
                   title: {
@@ -228,8 +226,6 @@ export default class ChartData extends React.Component {
             <div id="recovered">
               <Line
                 data={recoveredCases}
-                width={550}
-                height={270}
                 options={{
                   maintainAspectRatio: false,
                   title: {
@@ -299,8 +295,6 @@ export default class ChartData extends React.Component {
             <div id="deaths">
               <Line
                 data={deathCases}
-                width={550}
-                height={270}
                 options={{
                   maintainAspectRatio: false,
                   title: {
@@ -370,8 +364,6 @@ export default class ChartData extends React.Component {
             <div id="tests">
               <Line
                 data={testedCases}
-                width={550}
-                height={270}
                 options={{
                   maintainAspectRatio: false,
                   title: {

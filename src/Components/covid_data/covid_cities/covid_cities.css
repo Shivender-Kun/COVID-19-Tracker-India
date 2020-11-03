@@ -1,7 +1,7 @@
 .covidCities {
-  width: 100%;
-  /* border: 2px solid yellow; */
+  max-width: fit-content;
 }
+
 .title {
   margin-top: 10px;
 }
@@ -35,7 +35,6 @@ select:focus {
 label {
   font-size: 18px;
   margin-right: 10px;
-  /* border: 2px solid yellow; */
 }
 
 option:nth-child(2) {
@@ -68,13 +67,11 @@ option:nth-child(2) {
 
 .cityCharts {
   width: 85%;
-  height: 250px;
-  /* border: 2px solid blueviolet; */
+  height: 350px;
   margin: 0px auto 20px;
   background: rgba(39, 22, 114, 0.356);
   border-radius: 20px;
   padding: 20px;
-
 }
 
 .cityCharts:hover {
@@ -129,6 +126,7 @@ option:nth-child(2) {
   #searchBtn {
     font-size: 11px;
     padding: 5px 10px;
+    margin-bottom: 10px;
   }
 
   #searchBtn:hover {
@@ -138,5 +136,6 @@ option:nth-child(2) {
   .cityCharts {
     margin: 20px auto;
     padding: 10px;
+    height: 320px;
   }
 }
