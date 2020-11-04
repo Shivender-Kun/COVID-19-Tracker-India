@@ -88,7 +88,7 @@ export default class CovidData extends React.Component {
         return (
             <div className="data_container">
                 <div className="titles">
-                    <h2 className="title-main">Total Cases In India</h2>
+                    <h2 className="title-main">Total Cases In India</h2></div>
                     <div className="data_cards">
                         <div className="confirmed_card">
                             <h4>Confirmed</h4>
@@ -136,7 +136,7 @@ export default class CovidData extends React.Component {
                             </div>
                         </div>
                     </div>
-                </div>
+                
                 <div className="data">
                     <div className='list'>
                         <ul className="states">

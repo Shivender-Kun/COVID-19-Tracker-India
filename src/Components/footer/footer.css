@@ -13,8 +13,7 @@ hr {
 
 @media (max-width: 600px) {
   footer {
-    margin: 20px auto;
+    margin: 35px auto;
     width: 100%; 
   }
-
 }

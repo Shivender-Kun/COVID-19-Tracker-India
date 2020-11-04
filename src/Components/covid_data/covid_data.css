@@ -1,24 +1,11 @@
 .data {
-    margin: 50px auto;
+    margin: 10px auto 30px;
 }
 
 .data .list {
     display: flex;
     max-width: fit-content;
     margin: auto;
-}
-
-.title {
-    margin: 50px auto -20px;
-    padding-top: 20px;
-}
-
-.data {
-    margin: 10px auto;
-}
-
-.title-main {
-    color: rgb(255, 255, 255);
 }
 
 .data_cards {
@@ -175,7 +162,7 @@ li:last-child,
     .confirmed_card {
         padding: 10px 5px 30px;
         border-radius: 20px;
-        width: 90px;
+        width: 100px;
         margin: 0px auto;
         font-size: 15px !important;
     }
@@ -188,14 +175,14 @@ li:last-child,
     }
 
     .titles {
-        margin: 0px auto 20px;
-        padding-top: 0px;
+        /* margin: 0px auto 30px; */
+        padding-top: 10px;
     }
 
     li {
         font-size: 10px;
 
-        padding: 10px 3px;
+        padding: 20px 5px;
         width: 100px;        
 
         border: 1px solid #161246;
@@ -204,12 +191,13 @@ li:last-child,
     }
 
     li:hover {
-        width: 79px;
+        width: 80px;
         font-size: 11px;
     }
     
-    .states li:nth-child(33) {
-        padding-top: 3px;
+    .states li:nth-child(33),
+    .states li:nth-child(37) {
+        padding-top: 6px;
     }
 
     li:nth-child(1) {
@@ -220,6 +208,6 @@ li:last-child,
 
 @media (max-width: 500px) {
     li {
-        width: 77px;
+        width: 80px;
     }
 }

@@ -207,8 +207,8 @@ export default class CovidCities extends React.Component {
                   Search
                 </button>
               </form>
-              <div className="title">
-                <h2 id="title-main">Total Cases In {currentStateName}</h2>
+              <div className="titles">
+                <h2 className="title-main">Total Cases In {currentStateName}</h2>
               </div>
               <div className='stats_chart'>
                 <div className="data">
@@ -241,13 +241,13 @@ export default class CovidCities extends React.Component {
                       title: {
                         display: true,
                         text: "Total Cases In " + currentStateName,
-                        fontSize: 11,
+                        fontSize: 15,
                         fontColor: "white",
                       },
                       legend: {
                         labels: {
                           fontColor: "lightgreen",
-                          fontSize:  10,
+                          fontSize:  11,
                         },
                       },
                       tooltips: {
