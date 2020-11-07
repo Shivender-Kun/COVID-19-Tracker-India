@@ -1,5 +1,5 @@
 # COVID-19-Tracker-India
-Deployed on Heroku bit.ly/3mQa65s
+Deployed on Heroku : https://bit.ly/3mQa65s
 This project is built by me as an extern.
 This project is built using React Js and CSS.
 
