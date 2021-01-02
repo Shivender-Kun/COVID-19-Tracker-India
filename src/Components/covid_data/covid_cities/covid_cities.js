@@ -26,11 +26,18 @@ export default class CovidCities extends React.Component {
     this.handleChange = this.handleChange.bind(this);
     this.searchState = this.searchState.bind(this);
   }
+
+  handleChange(event) {
+    this.setState({
+      value: event.target.value,
+    });
+  }
+
   searchState(event) {
-    event.preventDefault();
+    // event.preventDefault();
     if (this.state.value) {
       if (this.state.value !== "India") {
-        this.setState({
+        currentStateName = this.state.value;this.setState({
           cities: [],
           active: [],
           deaths: [],
@@ -51,23 +58,12 @@ export default class CovidCities extends React.Component {
           confirmed: states.map((i) => i.confirmed),
           cities: Object.keys(this.state.data[this.state.value].districtData),
         });
-        currentStateName = this.state.value;
+        
       } else {
         this.setState({
           show: 0,
         });
       }
-    }
-  }
-
-  handleChange(event) {
-    this.setState({
-      value: event.target.value,
-    });
-    if (event.target.value === "India") {
-      this.setState({
-        show: 0,
-      });
     }
   }
 
@@ -198,14 +194,10 @@ export default class CovidCities extends React.Component {
             <div>
               <form id="searchState" onSubmit={this.searchState}>
                 <label className="inputArea">Select Place</label>
-                <select value={this.state.value} onChange={this.handleChange}>
+                <select value={this.state.value} onChange={this.handleChange} onClick={this.searchState}>
                   <option value="India">India</option>
                   {stateName}
                 </select>
-
-                <button id="searchBtn" onClick={this.searchState}>
-                  Search
-                </button>
               </form>
               <div className="titles">
                 <h2 className="title-main">Total Cases In {currentStateName}</h2>
@@ -300,14 +292,12 @@ export default class CovidCities extends React.Component {
           ) : (
             <form id="searchState" onSubmit={this.searchState}>
               <label className="inputArea">Select Place</label>
-              <select value={this.state.value} onChange={this.handleChange}>
+                <select value={this.state.value} onChange={this.handleChange} onClick={this.searchState}>
                 <option value="India">India</option>
                 {stateName}
               </select>
 
-              <button id="searchBtn" onClick={this.searchState}>
-                Search
-              </button>
+
             </form>
           )}
         </main>

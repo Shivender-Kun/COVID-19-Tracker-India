@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useMemo } from "react";
 import mapboxgl from "mapbox-gl";
 import useSWR from "swr";
 import "./map_data.css";
@@ -35,15 +35,20 @@ export default function MapData() {
 
   const { data } = useSWR("https://corona.lmao.ninja/v2/jhucsse", worldData);
 
-  let indiaData = [];
+  const indiaData = useMemo(() => {
+    let indiData = [];
+    if (data) {
+      data.map((i) => {
+        if (i.properties.country === "India") {
+          indiData.push(i);
+        }
+        return null;
+      });
+      return indiData;
+    }
+  }, [data])
 
-  if (data) {
-    data.map((i) =>
-      i.properties.country === "India" ? indiaData.push(i) : null
-    );
-  }
-
-  // console.log(indiaData);
+  console.log(indiaData);
 
   useEffect(() => {
     if (indiaData) {
@@ -155,7 +160,7 @@ export default function MapData() {
 
   return (
     <div className="map">
-    <h2>Map Representation of COVID Cases in India</h2>
+      <h2>Map Representation of COVID Cases in India</h2>
       <div className="mapContainer">
         {/* Mapbox Container */}
         <div className="mapBox" ref={mapboxElRef} />
