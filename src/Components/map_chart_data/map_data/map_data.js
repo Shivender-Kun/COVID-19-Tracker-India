@@ -48,7 +48,7 @@ export default function MapData() {
     }
   }, [data])
 
-  console.log(indiaData);
+  // console.log(indiaData);
 
   useEffect(() => {
     if (indiaData) {

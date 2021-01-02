@@ -9,8 +9,8 @@ let stateName;
 let currentStateName = "";
 
 export default class CovidCities extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       data: [],
       cities: [],
@@ -34,10 +34,11 @@ export default class CovidCities extends React.Component {
   }
 
   searchState(event) {
-    // event.preventDefault();
+    event.preventDefault();
     if (this.state.value) {
       if (this.state.value !== "India") {
-        currentStateName = this.state.value;this.setState({
+        currentStateName = this.state.value;
+        this.setState({
           cities: [],
           active: [],
           deaths: [],
@@ -58,7 +59,6 @@ export default class CovidCities extends React.Component {
           confirmed: states.map((i) => i.confirmed),
           cities: Object.keys(this.state.data[this.state.value].districtData),
         });
-        
       } else {
         this.setState({
           show: 0,
@@ -74,7 +74,6 @@ export default class CovidCities extends React.Component {
           data: result,
           stateName: Object.keys(result),
         });
-        // console.log(this.state.stateName);
       });
     });
   }
@@ -194,38 +193,45 @@ export default class CovidCities extends React.Component {
             <div>
               <form id="searchState" onSubmit={this.searchState}>
                 <label className="inputArea">Select Place</label>
-                <select value={this.state.value} onChange={this.handleChange} onClick={this.searchState}>
+                <select
+                  value={this.state.value}
+                  onChange={this.handleChange}
+                  onClick={this.searchState}
+                >
                   <option value="India">India</option>
                   {stateName}
                 </select>
               </form>
               <div className="titles">
-                <h2 className="title-main">Total Cases In {currentStateName}</h2>
+                <h2 className="title-main">
+                  Total Cases In {currentStateName}
+                </h2>
               </div>
-              <div className='stats_chart'>
+              <div className="stats_chart">
                 <div className="data">
-                  <div className='list'>
-                  <ul className="cities">
-                    <li>Cities</li>
-                    {cities}
-                  </ul>
-                  <ul className="confirmed">
-                    <li>Confirmed</li>
-                    {confirmed}
-                  </ul>
-                  <ul className="active">
-                    <li>Active</li>
-                    {active}
-                  </ul>
-                  <ul className="deaths">
-                    <li>Deaths</li>
-                    {deaths}
-                  </ul>
-                  <ul className="recovered">
-                    <li>Recovered</li>
-                    {recovered}
-                  </ul>
-                </div></div>
+                  <div className="list">
+                    <ul className="cities">
+                      <li>Cities</li>
+                      {cities}
+                    </ul>
+                    <ul className="confirmed">
+                      <li>Confirmed</li>
+                      {confirmed}
+                    </ul>
+                    <ul className="active">
+                      <li>Active</li>
+                      {active}
+                    </ul>
+                    <ul className="deaths">
+                      <li>Deaths</li>
+                      {deaths}
+                    </ul>
+                    <ul className="recovered">
+                      <li>Recovered</li>
+                      {recovered}
+                    </ul>
+                  </div>
+                </div>
                 <div className="cityCharts">
                   <Line
                     data={totalCases}
@@ -239,7 +245,7 @@ export default class CovidCities extends React.Component {
                       legend: {
                         labels: {
                           fontColor: "lightgreen",
-                          fontSize:  11,
+                          fontSize: 11,
                         },
                       },
                       tooltips: {
@@ -292,12 +298,14 @@ export default class CovidCities extends React.Component {
           ) : (
             <form id="searchState" onSubmit={this.searchState}>
               <label className="inputArea">Select Place</label>
-                <select value={this.state.value} onChange={this.handleChange} onClick={this.searchState}>
+              <select
+                value={this.state.value}
+                onChange={this.handleChange}
+                onClick={this.searchState}
+              >
                 <option value="India">India</option>
                 {stateName}
               </select>
-
-
             </form>
           )}
         </main>

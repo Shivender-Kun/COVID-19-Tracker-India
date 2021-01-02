@@ -34,7 +34,7 @@ export default class ChartData extends React.Component {
       response.json().then((result) => {
         this.setState({
           data: result,
-          date: result.cases_time_series.map((i) => i.date),
+          date: result.cases_time_series.map((i) => i.dateymd),
           dailyConfirmed: result.cases_time_series.map((i) => i.dailyconfirmed),
           dailyDeaths: result.cases_time_series.map((i) => i.dailydeceased),
           dailyRecovered: result.cases_time_series.map((i) => i.dailyrecovered),
@@ -49,7 +49,7 @@ export default class ChartData extends React.Component {
     });
   }
   render() {
-    const testedCaseDates = this.state.daily ? this.state.date.slice(40) : this.state.date.slice(41);
+    const testedCaseDates = this.state.daily ? this.state.date.slice(43) : this.state.date.slice(43);
 
     const finalValue = this.state.daily;
 
@@ -197,7 +197,7 @@ export default class ChartData extends React.Component {
                         type: "time",
                         time: {
                           displayFormats: {
-                            month: "MMM",
+                            month: 'MMM'
                           },
                         },
                         ticks: {
