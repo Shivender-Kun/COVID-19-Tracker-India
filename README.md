@@ -1,5 +1,6 @@
 # COVID-19-Tracker-India
 
+Deployed on Netlify : http://bit.ly/3pF5Reo .
 Deployed on Heroku : https://bit.ly/3mQa65s .
 
 This project is built by me as an extern.
