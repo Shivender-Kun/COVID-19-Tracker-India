@@ -2,9 +2,7 @@
 
 Deployed on Netlify : http://bit.ly/3pF5Reo .
 
-This project is built by me as an extern.
-
-This project is built using React Js and CSS.
+This project is built using React.js and CSS.
 
 The project focuses on tracking :
   1. No. of Covid Samples taken per day in India Only.
