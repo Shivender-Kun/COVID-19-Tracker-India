@@ -88,8 +88,10 @@
 li {
     list-style: none;
     font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-    padding: 18px 10px;
     width: 150px;
     max-width: 200px;
     
@@ -99,7 +101,6 @@ li {
     color: rgba(0, 255, 157, 0.623);
 
     height: 70px;
-    text-align: center;
 
     transition: 0.5s ease-out;
 }
@@ -109,17 +110,10 @@ li:hover {
     color: orangered;
     width: 170px;
     font-size: 17px;
-    min-width: fit-content;
-}
-
-.states li:nth-child(33) {
-    padding-top: 10px;
 }
 
 li:nth-child(1) {
     color: goldenrod;
-
-    padding-bottom: 5px;
     font-size: 19px;
     font-weight: bold;
     border-top-left-radius: 20px;
@@ -181,8 +175,6 @@ li:last-child,
 
     li {
         font-size: 10px;
-
-        padding: 20px 5px;
         width: 100px;        
 
         border: 1px solid #161246;
@@ -191,23 +183,28 @@ li:last-child,
     }
 
     li:hover {
-        width: 80px;
+        width: 100px;
         font-size: 11px;
-    }
-    
-    .states li:nth-child(33),
-    .states li:nth-child(37) {
-        padding-top: 6px;
     }
 
     li:nth-child(1) {
-        padding-top: 20px;
-        font-size: 11px;
+        font-size: 12px;
+    }
+
+    li:nth-child(1):hover {
+        font-size: 13px;
     }
 }
 
 @media (max-width: 500px) {
     li {
-        width: 80px;
+        width: 81px;
+        font-size: 9px;
+    }
+
+    li:hover {
+        width: 81px;
+        padding: 20px 3px;
+        font-size: 10px;
     }
 }
