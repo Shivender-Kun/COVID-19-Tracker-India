@@ -36,6 +36,31 @@ label {
 option:nth-child(2) {
   display: none;
 }
+
+#searchBtn {
+  background: rgba(82, 80, 175, 0.788);
+
+  font-size: 18px;
+  padding: 10px 15px;
+  border-radius: 6px;
+
+  margin-top: 30px;
+  margin-left: 50px;
+
+  outline: none;
+  appearance: none;
+  border: none;
+
+  transition: 0.4s ease;
+}
+
+#searchBtn:hover {
+  background: rgb(95, 78, 252);
+  color: black;
+  font-size: 20px;
+  font-weight: 500;
+}
+
 .cityCharts {
   width: 85%;
   height: 350px;

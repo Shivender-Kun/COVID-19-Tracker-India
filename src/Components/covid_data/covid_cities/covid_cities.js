@@ -201,6 +201,9 @@ export default class CovidCities extends React.Component {
                   <option value="India">India</option>
                   {stateName}
                 </select>
+                <button id="searchBtn" onClick={this.searchState}>
+                  Search
+                </button>
               </form>
               <div className="titles">
                 <h2 className="title-main">
@@ -306,6 +309,9 @@ export default class CovidCities extends React.Component {
                 <option value="India">India</option>
                 {stateName}
               </select>
+                <button id="searchBtn" onClick={this.searchState}>
+                  Search
+                </button>
             </form>
           )}
         </main>
