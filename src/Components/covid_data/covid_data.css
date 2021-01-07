@@ -169,7 +169,6 @@ li:last-child,
     }
 
     .titles {
-        /* margin: 0px auto 30px; */
         padding-top: 10px;
     }
 
@@ -179,7 +178,7 @@ li:last-child,
 
         border: 1px solid #161246;
 
-        height: 60px;
+        height: 50px;
     }
 
     li:hover {
@@ -198,13 +197,12 @@ li:last-child,
 
 @media (max-width: 500px) {
     li {
-        width: 81px;
+        width: 82px;
         font-size: 9px;
     }
 
     li:hover {
-        width: 81px;
-        padding: 20px 3px;
+        width: 82px;
         font-size: 10px;
     }
 }
