@@ -1,19 +1,12 @@
 footer {
-  margin: 60px auto;
-  text-align: center;
-  width: fit-content;
+  margin: 50px;
 }
 
 hr {
-  margin: 0px auto;
   background: rgba(102, 101, 104, 0.836);
   border-width: 0;
   height: 2px;
 }
 
 @media (max-width: 600px) {
-  footer {
-    margin: 35px auto;
-    width: 100%; 
-  }
 }

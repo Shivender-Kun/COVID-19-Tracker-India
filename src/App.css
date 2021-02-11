@@ -5,34 +5,13 @@
 }
 
 body {
-  position: relative;
-  background: #161246;
-  font-family: monospace;
-  color: #bdbdbd;
+  background: #1a1919;
+  color: #f3efef;
   text-align: center;
 }
 
-h1 {
-  color: rgb(240, 207, 117);
-}
-
-.home-map {
-  display: flex;
-  width: calc(99vw - 92px);
-  margin-left: 92px;
-}
-
-@media (max-width: 1500px) {
-  .home-map {
-    flex-direction: column;
-    margin-right: 40px auto;
-    width: calc(98vw - 92px);
-  }
+/* @media (max-width: 1500px) {
 }
 
 @media (max-width: 920px) {
-  .home-map {
-    width: 100%;
-    margin-left: 0px;
-  }
-}
+} */
