@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { fetchData, table } from "../index";
-const Covid_data = () => {
+const Covid_Data = () => {
   const [data, setData] = useState({});
 
   React.useEffect(() => {
@@ -20,4 +20,4 @@ const Covid_data = () => {
   );
 };
 
-export default Covid_data;
+export default Covid_Data;
