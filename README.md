@@ -1,4 +1,5 @@
-# COVID-19-Tracker-India
+# COVID-19-Tracker-India ( New version is in Development with better and more optimised code )
+
 
 Deployed on Netlify : http://bit.ly/3pF5Reo .
 
