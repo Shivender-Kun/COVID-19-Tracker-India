@@ -4,10 +4,10 @@ import "./App.css";
 
 export default function App() {
   return (
-    <div>
+    <React.Fragment>
       <Header />
       <Home />
       <Footer />
-    </div>
+    </React.Fragment>
   );
 }

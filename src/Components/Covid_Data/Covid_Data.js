@@ -1,23 +1,18 @@
-import React, { useState } from "react";
-import { fetchData, table } from "../index";
-const Covid_Data = () => {
-  const [data, setData] = useState({});
-
-  React.useEffect(() => {
-    const fetch = async () => {
-      const apidata = await fetchData();
-      setData(apidata);
-    };
-    fetch();
-  }, []);
-
+import React from "react";
+import { stateTable } from "../index";
+import "./Covid_Data.css";
+const CovidData = (data) => {
   return (
-    <div className="home">
-      <table id="simple-board">
-        <tbody>{table(data)}</tbody>
-      </table>
-    </div>
+    data.data !== undefined && (
+      <React.Fragment>
+        <div className="home">
+          <table id="simple-board">
+            <tbody>{stateTable(data.data)}</tbody>
+          </table>
+        </div>
+      </React.Fragment>
+    )
   );
 };
 
-export default Covid_Data;
+export default CovidData;

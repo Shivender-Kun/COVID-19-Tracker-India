@@ -1,0 +1,89 @@
+#totalDataCards {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  cursor: default;
+}
+
+#card_title {
+  margin-bottom: 20px;
+  color: rgb(155, 235, 245);
+}
+
+#last_updated {
+  margin-top: 10px;
+}
+
+h6 {
+  margin-top: 3px;
+}
+
+#confirmed_card,
+#active_card,
+#deaths_card,
+#deaths_card,
+#recovered_card {
+  height: 10vh;
+  padding: 15px 0px 0px;
+  width: 21%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  border-radius: 15px;
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px black;
+  box-shadow: 4px 4px rgb(0, 0, 0);
+}
+
+#confirmed_card {
+  background: rgba(0, 68, 255, 0.288);
+}
+
+#active_card {
+  background: rgba(255, 1, 1, 0.205);
+}
+
+#deaths_card {
+  background: rgba(219, 214, 214, 0.603);
+}
+
+#recovered_card {
+  background: rgba(6, 197, 47, 0.767);
+}
+
+#empty {
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  height: 15%;
+  width: 100%;
+}
+
+#confirmed_card #empty {
+  background: rgb(4, 0, 255);
+}
+
+#active_card #empty {
+  background: rgb(255, 0, 0);
+}
+
+#recovered_card #empty {
+  background: chartreuse;
+}
+
+#deaths_card #empty {
+  background: rgb(114, 116, 113);
+}
+
+@media (min-width: 700px) {
+  #confirmed_card,
+  #active_card,
+  #deaths_card,
+  #deaths_card,
+  #recovered_card {
+    height: 15vh;
+    font-size: 23px;
+  }
+}

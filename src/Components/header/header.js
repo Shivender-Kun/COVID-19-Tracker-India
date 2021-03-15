@@ -3,10 +3,10 @@ import "./Header.css";
 
 export default function Header() {
   return (
-    <div className="header-main">
+    <React.Fragment>
       <header>
-        <h1>Project COVID-19 for India</h1>
+        <h1 id="project-title">COVID-19 India</h1>
       </header>
-    </div>
+    </React.Fragment>
   );
 }

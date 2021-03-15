@@ -1,12 +1,14 @@
 footer {
-  margin: 50px;
+  padding: 30px;
+  color: rgb(255, 255, 255);
 }
 
 hr {
-  background: rgba(102, 101, 104, 0.836);
+  margin-top: 90px;
+  background: rgba(0, 0, 0, 0.836);
   border-width: 0;
   height: 2px;
 }
 
-@media (max-width: 600px) {
-}
+/* @media (max-width: 600px) {
+} */

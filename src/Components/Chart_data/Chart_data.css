@@ -1,0 +1,90 @@
+.charts {
+  margin-top: 25px;
+}
+
+.chart-title {
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+}
+
+p {
+  font-size: 20px;
+  color: aliceblue;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.all_charts {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.all_charts div {
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px 15px;
+}
+
+.all_charts div div {
+  margin: 60px auto;
+  width: 90%;
+  height: 350px;
+}
+
+#confirmed {
+  background: rgba(255, 0, 0, 0.1);
+}
+
+#recovered {
+  background: rgba(0, 255, 0, 0.1);
+}
+
+#deaths {
+  background: rgba(209, 209, 221, 0.1);
+}
+
+#tests {
+  background: rgba(180, 0, 252, 0.1);
+}
+
+#deaths:hover {
+  background: rgba(209, 209, 221, 0.2);
+}
+
+#tests:hover {
+  background: rgba(180, 0, 252, 0.2);
+}
+
+#recovered:hover {
+  background: rgba(0, 255, 0, 0.2);
+}
+
+#confirmed:hover {
+  background: rgba(255, 0, 0, 0.2);
+}
+
+@media (min-width: 1000px) {
+  .charts {
+    margin-top: 40px;
+  }
+
+  .all_charts div {
+    width: 50%;
+  }
+
+  .chart-title {
+    font-size: 23px;
+  }
+
+  .charts {
+    top: 200px;
+  }
+}
+
+@media (min-width: 700px) {
+  .chart-title {
+    font-size: 24px;
+  }
+}

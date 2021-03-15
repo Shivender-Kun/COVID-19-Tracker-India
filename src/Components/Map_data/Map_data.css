@@ -1,0 +1,57 @@
+.map {
+  margin-top: 60px;
+  width: 90vw;
+}
+
+.mapContainer,
+.mapBox {
+  margin: 10px auto;
+  width: 95%;
+  height: 60vh;
+  border-radius: 15px;
+}
+
+.mapboxgl-popup {
+  color: #000000;
+}
+
+.popup p {
+  font-size: 15px;
+  padding: 5px;
+  margin: 0px;
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+}
+
+.mapboxgl-popup-content {
+  border-radius: 20px;
+  color: black;
+  border: 2px solid yellowgreen;
+}
+
+#map_title {
+  margin-bottom: 50px;
+  color: aliceblue;
+}
+
+@media (min-width: 700px) {
+  .map {
+    margin-top: 80px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .map {
+    top: 60px;
+    width: 50vw;
+    height: 100vh;
+  }
+
+  .mapContainer,
+  .mapBox {
+    margin: 10px auto;
+    width: 95%;
+    height: 70vh;
+    border-radius: 15px;
+  }
+}

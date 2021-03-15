@@ -1,0 +1,67 @@
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: default;
+}
+
+tr {
+  font-size: 12px;
+  font-weight: 500;
+  transition: 0.15s ease-out;
+  background-color: rgba(253, 253, 253, 0.384);
+  box-shadow: 2px 2px black;
+}
+
+td {
+  height: 45px;
+  width: 18vw;
+  padding: 5px 9px;
+  box-shadow: 2px 2px black;
+}
+
+tr:hover {
+  background-color: rgba(255, 255, 255, 0.39);
+  font-weight: 700;
+  box-shadow: 4px 4px black;
+}
+
+tr:nth-child(1) {
+  color: rgb(12, 11, 12);
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.states {
+  background-color: rgba(248, 150, 2, 0.459);
+}
+
+.active {
+  background-color: rgba(184, 62, 62, 0.575);
+}
+
+.confirmed {
+  background-color: rgba(0, 0, 255, 0.452);
+}
+
+.recovered {
+  background: rgba(5, 182, 5, 0.5);
+}
+
+.deaths {
+  background: rgba(255, 254, 254, 0.562);
+}
+
+@media (min-width: 600px) {
+  tr {
+    font-size: 18px;
+  }
+
+  tr:hover {
+    font-size: 20px;
+  }
+
+  tr:nth-child(1) {
+    font-size: 23px;
+  }
+}

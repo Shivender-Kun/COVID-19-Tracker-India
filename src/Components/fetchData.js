@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const options = {
+const stateData = {
   method: "GET",
   url: "https://corona-virus-world-and-india-data.p.rapidapi.com/api_india",
   headers: {
@@ -9,12 +9,27 @@ const options = {
   },
 };
 
+const historyData = {
+  method: "get",
+  url: "https://api.covid19india.org/data.json",
+  headers: {},
+};
+
 const fetchData = async () => {
   try {
-    const response = await axios.request(options);
+    const response = await axios.request(stateData);
     return response.data;
   } catch (error) {
-    console.error("Error occured while fetching data");
+    console.error("Error occurred while fetching data");
+  }
+};
+
+export const fetchHistory = async () => {
+  try {
+    const response = await axios.request(historyData);
+    return response.data;
+  } catch (error) {
+    console.error("Error occurred while fetching data");
   }
 };
 
