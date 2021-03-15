@@ -61,16 +61,19 @@ export default class CovidData extends React.Component {
         );
       });
     }
+
     if (this.state.active) {
       active = this.state.active.map((item4) => {
         return <li key={item4 + Math.random()}>{nfObject.format(item4)}</li>;
       });
     }
+
     if (this.state.deaths) {
       deaths = this.state.deaths.map((item1) => {
         return <li key={item1 + Math.random()}>{nfObject.format(item1)}</li>;
       });
     }
+
     if (this.state.recovered) {
       recovered = this.state.recovered.map((item2) => {
         return (
@@ -80,6 +83,7 @@ export default class CovidData extends React.Component {
         );
       });
     }
+
     if (this.state.confirmed) {
       confirmed = this.state.confirmed.map((item3) => {
         return (
