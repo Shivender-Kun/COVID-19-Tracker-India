@@ -1,8 +1,9 @@
 # COVID-19-Tracker-India ( New version available with better and more optimised code )
 
 
-Deployed on Netlify (Old Version) : http://bit.ly/3pF5Reo .
-Deployed on Netlify (Ver. 2.0) : http://bit.ly/3qTsQT0
+(Old Version) Deployed on Netlify : http://bit.ly/3pF5Reo .
+
+(Ver. 2.0) Deployed on Netlify : http://bit.ly/3qTsQT0.
 
 This project is built using React.js and CSS.
 
